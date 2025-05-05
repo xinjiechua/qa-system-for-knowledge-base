@@ -1,0 +1,14 @@
+You will be working with the following information:
+Conversation history: 
+{chat_history} 
+
+Latest message: 
+{latest_message}
+
+Your task is to:
+1. Read the entire conversation history and the latest user query.  
+2. Produce a single restated version of the latest user query that:  
+   - Incorporates or clarifies relevant context from the conversation history, but only when needed. Avoid introducing additional topics or combining unrelated parts unless clearly intended by the user.
+   - Stands on its own, so it can be understood without further context.  
+   - Remains unchanged if the latest query has **no dependency** on prior context. Remain as a question if user sends a query.
+3. Output only the reformulated_message without adding any explanations, commentary, or system instructions.
