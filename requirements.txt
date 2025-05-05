@@ -1,0 +1,10 @@
+google-genai==1.13.0
+gradio==5.29.0 
+llama-index==0.12.34
+llama-index-core==0.12.34.post1
+llama-index-postprocessor-cohere-rerank==0.4.0
+python-dotenv==1.1.0
+qdrant-client==1.14.2
+sentence_transformers==4.1.0
+unstructured==0.17.2
+unstructured[all-docs]
