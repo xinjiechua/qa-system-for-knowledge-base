@@ -1,17 +1,19 @@
 
 from typing import Dict, List, Optional
 from google import genai
-import src.config as Config
+from google.genai import types
+from src.config import Config
 import logging
 
+config = Config()
 
 class GeminiLLM:
     def __init__(self):
         """
         Initialize the Gemini client with API key.
         """
-        self._client = genai.Client(api_key=Config.LLM_API_KEY)
-        self.model = Config.LLM_MODEL_NAME
+        self._client = genai.Client(api_key=config.GEMINI_API_KEY)
+        self.model = config.LLM_MODEL_NAME
         
     def complete(
         self,
@@ -23,13 +25,18 @@ class GeminiLLM:
         """
         Send a request to Gemini for chat completion.
         """
-        response = self._client.models.generate_content(
-            model=self.model,
-            contents=messages,
+        
+        config = types.GenerateContentConfig(
             temperature=temperature,
             max_output_tokens=max_tokens,
             response_mime_type=response_mime_type,
         )
+           
+        response = self._client.models.generate_content(
+            model=self.model,
+            contents=messages,
+            config=config,
+        )
 
-        logging.debug("Gemini response: %s", response)
+        logging.info("Gemini response: %s", response)
         return response.text
