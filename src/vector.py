@@ -1,10 +1,12 @@
 
 from qdrant_client import QdrantClient
-from qdrant_client.models import VectorParams, Distance, PointStruct, Filter, FieldCondition, Match
+from qdrant_client.models import VectorParams, Distance, PointStruct, Filter, FieldCondition, MatchValue
 from src.config import Config
 from src.embedder import Embedder
 from src.parser import parse_pdf
 import logging
+
+embedder = Embedder()
 
 class VectorDB():
     def __init__(self):        
@@ -45,16 +47,15 @@ class VectorDB():
         )
         logging.info(f"Inserted {len(points)} points into the collection '{self.collection_name}'.")
         
-    def query(self, query: str, top_k: int = Config.RETRIEVE_TOP_K):
+    def query(self, query: str, selected_course: str, top_k: int = Config.RETRIEVE_TOP_K):
         """
         Query the vector database for similar documents.
         """
-        query_vector = Embedder.generate_embedding(query)
-        
+        query_vector = embedder.generate_embedding(query)
         results = self.client.query_points(
             collection_name=self.collection_name,
-            query_vector=query_vector,
-            query_filter=Filter(must=[FieldCondition(key='filename',range=Match(value="computer_science"))]),
+            query=query_vector,
+            # query_filter=Filter(must=[FieldCondition(key='metadata.filename', match=MatchValue(value="computer_science.pdf"))]),
             limit=top_k,
             with_payload=True,
             with_vectors=False,     
