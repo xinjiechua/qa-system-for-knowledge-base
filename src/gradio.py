@@ -2,8 +2,10 @@ import gradio as gr
 from src.retriever import RAG
 from src.config import Config
 
+rag = RAG()
+
 def chat_interface(user_input, history, selected_course):
-    response = RAG.get_response(user_input, history, selected_course)
+    response = rag.get_response(user_input, history, selected_course)
     history.append((user_input, response))
     
     return "", history
