@@ -4,7 +4,21 @@ from llama_index.core import Document
 from unstructured.partition.pdf import partition_pdf
 from src.embedder import Embedder
 import logging
+import json
+embedder = Embedder()
 
+def save_documents_to_json(documents, output_path):
+    json_data = []
+    for doc in documents:
+        json_data.append({
+            "text": doc.text,
+            "metadata": doc.metadata,
+            "embedding": doc.embedding
+        })
+    
+    with open(output_path, "w", encoding="utf-8") as f:
+        json.dump(json_data, f, ensure_ascii=False, indent=2)
+        
 def parse_pdf(file_path):
     """
     Parses a PDF file and returns its content as document.
@@ -38,8 +52,9 @@ def parse_pdf(file_path):
     filename = os.path.basename(filepath)
     text_documents = [Document(text=text, metadata={'filename': filename}) for text in texts]
     for doc in text_documents:
-        doc.embedding = Embedder.generate_embedding(doc.text)
+        doc.embedding = embedder.generate_embedding(doc.text)
     documents.extend(text_documents)
+    save_documents_to_json(documents, "parsed_documents.json")
     return documents       
 
 
