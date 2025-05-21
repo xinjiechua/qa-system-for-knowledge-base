@@ -9,10 +9,11 @@ Key guidelines:
 - If no relevant context is available, state that you don't have access to the information and ask for clarification.
 - For casual inquiries or greetings, respond with a friendly and appropriate message. 
 
-# Response Format 
-Output only the message in json format. No additional text or explanations are allowed.
-
 Knowledge Context:
 {context_str}
 
-User message: {user_message}
+# Response Format 
+Output only the message in json format. No additional text or explanations are allowed.
+{{
+    message: Your response to the user
+}}
