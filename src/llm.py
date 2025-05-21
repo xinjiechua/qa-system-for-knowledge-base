@@ -38,5 +38,8 @@ class GeminiLLM:
             config=config,
         )
 
-        logging.info("Gemini response: %s", response)
-        return response.text
+        print("Gemini response: ", response)
+        if response.candidates:
+            if response.candidates[0].content and response.candidates[0].content.parts:
+                return response.candidates[0].content.parts[0].text
+        return None
