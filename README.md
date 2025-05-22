@@ -6,24 +6,36 @@ A question-answering chatbot powered by **Gradio** and built with **Retrieval-Au
 ## Getting Started
 Follow these steps to set up and run the application:
 
-### 1. Install Dependencies
+### 1. Clone the Repository
+```bash
+git clone https://github.com/xinjiechua/qa-system-for-knowledge-base
+cd qa-system-for-knowledge-base
+```
+
+### 2. Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-For macOS, `brew install tesseract` and `brew install poppler`
+For macOS, install the following system dependencies:
+```bash
+brew install tesseract
+brew install poppler`
+```
 
-### 2. Set Up Environment Variables:
+### 3. Configure Environment Variables:
 Create a `.env` file based on the provided `.env.example` file and update it with your API keys and other necessary configuration values.
 
-### 3. Start Qdrant Vector Database (via Docker)
+### 4. Start Qdrant Vector Database (via Docker)
 ```bash
 docker run -p 6333:6333 \
 -v $(pwd)/vectordb:/qdrant/storage \
 qdrant/qdrant
 ```
+Note: To ingest data into the vector database for the first time, set `INSERT_DATA = True` in `app.py`. After the initial data ingestion, always set `INSERT_DATA = False`.
 
-### 4. Run the Application
+
+### 5. Run the Application
 ```bash
 python app.py
 ```
