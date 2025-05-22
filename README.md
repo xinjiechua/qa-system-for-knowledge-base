@@ -15,7 +15,6 @@ For macOS, `brew install tesseract` and `brew install poppler`
 
 ### 2. Set Up Environment Variables:
 Create a `.env` file based on the provided `.env.example` file and update it with your API keys and other necessary configuration values.
-Get API key at [GEMINI]https://aistudio.google.com/apikey 
 
 ### 3. Start Qdrant Vector Database (via Docker)
 ```bash
