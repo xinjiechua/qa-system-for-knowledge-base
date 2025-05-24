@@ -1,10 +1,12 @@
 import os
+import logging
+import json
 from pathlib import Path
 from llama_index.core import Document
 from unstructured.partition.pdf import partition_pdf
 from src.embedder import Embedder
-import logging
-import json
+
+logger = logging.getLogger(__name__)
 embedder = Embedder()
 
 def save_documents_to_json(documents, output_path):
@@ -13,7 +15,6 @@ def save_documents_to_json(documents, output_path):
         json_data.append({
             "text": doc.text,
             "metadata": doc.metadata,
-            "embedding": doc.embedding
         })
     
     with open(output_path, "w", encoding="utf-8") as f:
@@ -24,7 +25,7 @@ def parse_pdf(file_path):
     Parses a PDF file and returns its content as document.
     """
     documents = []
-    logging.info(f"Parsing text from {file_path}")
+    logger.info(f"Parsing text from {file_path}")
 
     for filepath in Path(file_path).iterdir():
         raw_elements = []
@@ -48,12 +49,13 @@ def parse_pdf(file_path):
                 texts.append(str(element))
             else:
                 texts.append(str(element))
-    
-    filename = os.path.basename(filepath)
-    text_documents = [Document(text=text, metadata={'filename': filename}) for text in texts]
-    for doc in text_documents:
-        doc.embedding = embedder.generate_embedding(doc.text)
-    documents.extend(text_documents)
+        
+        filename = os.path.basename(filepath)
+        text_documents = [Document(text=text, metadata={'filename': filename}) for text in texts]
+        for doc in text_documents:
+            doc.embedding = embedder.generate_embedding(doc.text)
+        documents.extend(text_documents)
+        
     save_documents_to_json(documents, "parsed_documents.json")
     return documents       
 
