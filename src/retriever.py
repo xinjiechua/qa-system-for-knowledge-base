@@ -29,7 +29,7 @@ class RAG():
     
         reformulated_query = llm.complete(messages=prompt)
         reformulated_query_dict = json.loads(reformulated_query)
-        logger.info("Reformulated query: ", reformulated_query)
+        logger.info("Reformulated query: %s", reformulated_query)
         return reformulated_query_dict.get("reformulated_message", "")
 
     def rerank_chunks(self, chunks, query: str) -> list:
@@ -57,12 +57,12 @@ class RAG():
         """
         reformulated_query = self.reformulate_query(history=history,query=user_message)
         retrieved_chunks = vectordb.query(query=reformulated_query, selected_course=selected_course)
-        logger.info("Retrieved chunks: ", retrieved_chunks)
+        logger.info("Retrieved chunks: %s", retrieved_chunks)
         
         if hasattr(retrieved_chunks, 'points') and retrieved_chunks.points: 
             chunks = retrieved_chunks.points
             filtered_chunks = self.rerank_chunks(chunks, reformulated_query)
-            logger.info("Filtered chunks: ", filtered_chunks)
+            logger.info("Filtered chunks: %s", filtered_chunks)
             context_str = "\n\n".join([f"Context {i + 1}:\n{content.node.text}" for i, content in enumerate(filtered_chunks)])
         else:
             context_str="No relevant context found."
@@ -74,8 +74,8 @@ class RAG():
             messages.append({"role": "model", "parts": [{"text": bot_turn}]})
         messages.append({"role": "user", "parts": [{"text": user_message}]})
         
-        logger.info("Messages: ", messages)
+        logger.info("Messages: %s", messages)
         response = llm.complete(messages=messages)
         response_dict = json.loads(response)
-        logger.info("LLM response: ", response)
+        logger.info("LLM response: %s", response)
         return response_dict.get("message", "")
