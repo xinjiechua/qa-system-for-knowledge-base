@@ -20,18 +20,25 @@ pip install -r requirements.txt
 For macOS, install the following system dependencies:
 ```bash
 brew install tesseract
-brew install poppler`
+brew install poppler
 ```
 
 ### 3. Configure Environment Variables:
 Create a `.env` file based on the provided `.env.example` file and update it with your API keys and other necessary configuration values.
 
 ### 4. Start Qdrant Vector Database (via Docker)
+Create and run the container for the first time:
 ```bash
 docker run -p 6333:6333 \
 -v $(pwd)/vectordb:/qdrant/storage \
 qdrant/qdrant
 ```
+Subsequent runs:
+```bash
+docker ps -a
+docker start <CONTAINTER_ID>
+```
+
 Note: To ingest data into the vector database for the first time, set `INSERT_DATA = True` in `app.py`. After the initial data ingestion, always set `INSERT_DATA = False`.
 
 
