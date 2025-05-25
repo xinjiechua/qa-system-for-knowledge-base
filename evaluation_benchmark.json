@@ -1,0 +1,127 @@
+[
+    {
+        "course": "Computer Science",
+        "user_input": "How many programmes are offered under the Bachelor of Computer Science?",
+        "expected_response": "There are six programmes offered: Computer System and Network, Artificial Intelligence, Information Systems, Software Engineering, Multimedia Computing, and Data Science."
+    },
+    {
+        "course": "Computer Science",
+        "user_input": "When should Computer Science students start their industrial training, and how long is the duration?",
+        "expected_response": "You should start your industrial training in Semester 1 of Year 3. The training should at least 24 weeks. If less than 24 weeks, the student does not fulfil the requirement of the Industrial Training programme and will fail his or her Industrial Training."
+    },
+    {
+        "course": "Computer Science",
+        "user_input": "What grading system is used in FCSIT?",
+        "expected_response": "FCSIT uses UM's grading system. Grades include: A = 4.00, A- = 3.70, B+ = 3.30, B = 3.00, B- = 2.70, C+ = 2.30, C = 2.00, C- = 1.70, D+ = 1.30, D = 1.00 (conditional pass), and F = 0.00 (fail). Refer to page 97 for details."
+    },
+    {
+        "course": "Computer Science",
+        "user_input": "Who is the Deputy Dean for Undergraduate studies?",
+        "expected_response": "The Deputy Dean (Undergraduate) is Associate Professor Dr. Norisma Idris."
+    },
+    {
+        "course": "Computer Science",
+        "user_input": "Who is the Head of Department for AI?",
+        "expected_response": "The Head of the Department of Artificial Intelligence is Dr. Erma Rahayu Mohd Faizal Abdullah."
+    },
+    {
+        "course": "Computer Science",
+        "user_input": "What is the course code for Data Structure?",
+        "expected_response": "The course code for Data Structure is WIA1002."
+    },
+    {
+        "course": "Computer Science",
+        "user_input": "Are there any programming courses in the first year as an Artificial Intelligence student?",
+        "expected_response": "Yes, you will learn the basics of programming in your first year through courses like Fundamentals of Programming and Data Structures."
+    },
+    {
+        "course": "Computer Science",
+        "user_input": "How long is the Computer Science programme?",
+        "expected_response": "The Computer Centre offered a four (4) years Bachelor of Computer Science programme."
+    },
+    {
+        "course": "Computer Science",
+        "user_input": "How many academic projects are required in the final year?",
+        "expected_response": "You will have Academic Project I and Academic Project II."
+    },
+    {
+        "course": "Computer Science",
+        "user_input": "What courses should I take in Year 1 Semester 1 for the Computer Science (Artificial Intelligence) programme?",
+        "expected_response": "In Year 1 Semester 1, you will take: GIG1003 (Basic Entrepreneurship Culture), GLTXXXX (English for Communication 1), WIX1001 (Computing Mathematics I), WIX1002 (Fundamentals of Programming), WIX1003 (Computer Systems and Organization), and WIA1007 (Introduction to Data Science)"
+    },
+    {
+        "course": "Pharmacy",
+        "user_input": "How long is the Bachelor of Pharmacy (Hons) programme?",
+        "expected_response": "The programme spans 4 academic years."
+    },
+    {
+        "course": "Pharmacy",
+        "user_input": "What are the total credits required in Year 1?",
+        "expected_response": "In Year 1, you are required to complete 36 credits."
+    },
+    {
+        "course": "Pharmacy",
+        "user_input": "Can I take a foreign language instead of English Communication?",
+        "expected_response": "Yes, students with MUET Band 5 or 6 may choose a Foreign Language Course instead of English for Communication."
+    },
+    {
+        "course": "Pharmacy",
+        "user_input": "What is covered in the Anatomy and Physiology course?",
+        "expected_response": "The course covers the human body’s structure and function including major systems like cardiovascular, respiratory, nervous, and others, and explains homeostasis."
+    },
+    {
+        "course": "Pharmacy",
+        "user_input": "Who is the coordinator of the Mobility Programme?",
+        "expected_response": "DR. ASFARINA AMIR HASSAN is the Coordinator of Mobility Programme. Her email is asfarina_amir@um.edu.my."
+    },
+    {
+        "course": "Pharmacy",
+        "user_input": "Can you provide the list of foreign language courses available?",
+        "expected_response": "Here is a list of Foreign Language Courses: BASIC KOREAN LANGUAGE 1, BASIC KOREAN LANGUAGE 2, BASIC PORTUGUESE LANGUAGE 1, BASIC PORTUGUESE LANGUAGE 2, BASIC RUSSIAN LANGUAGE 1, BASIC SPANISH LANGUAGE 1, BASIC THAI LANGUAGE 1, BASIC THAI LANGUAGE 2, BASIC TURKISH LANGUAGE, BASIC VIETNAMESE LANGUAGE"
+    },
+    {
+        "course": "Pharmacy",
+        "user_input": "How can I appeal against my examination results?",
+        "expected_response": "You may appeal against your examination results, including continuous assessment and/or final exams, within seven (7) days from the official result announcement. You must complete the university’s prescribed appeal form and submit it to the Dean of the Faculty along with a copy of the payment receipt. A non-refundable processing fee is required. Appeals will not be accepted if submitted late, incomplete, or without proof of payment. Upon receiving a valid appeal, a second examiner will be appointed to review the assessment together with the original examiner. The final decision will be made by the Faculty Appeals Committee and approved by the Committee of Examiners."
+    },
+    {
+        "course": "Pharmacy",
+        "user_input": "What are the graduation requirements for the Bachelor of Pharmacy (Hons) programme?",
+        "expected_response": "To graduate, a student must: (a) achieve a final CGPA of at least 2.00; (b) complete all prescribed credit hours for the programme; (c) meet the Faculty's specific requirements; (d) fulfill university language requirements; and (e) comply with any other requirements set by the Senate. At least two-thirds of total programme credits must be taken at the University of Malaya. A student must also complete the minimum duration of study unless exceptions apply. A Bachelor’s Degree With Honours is awarded upon meeting all conditions. A Pass With Honours (With Distinction) is awarded if the student earns a final CGPA of 3.70 or above, has no failed or repeated courses, and completes the programme within the minimum or approved duration."
+    },
+    {
+        "course": "Pharmacy",
+        "user_input": "How many credits are required for the pharmaceutical industry and regulatory control course?",
+        "expected_response": "6 credits are required for the pharmaceutical industry and regulatory control course."
+    },
+    {
+        "course": "Pharmacy",
+        "user_input": "Who is the Head of the Department of pharmaceutical chemistry?",
+        "expected_response": "DR. HEH CHOON HAN is the HEAD of department of pharmaceutical chemistry."
+    },
+    {
+        "course": "Electrical Engineering",
+        "user_input": "Who is the head of the Department of Electrical Engineering?",
+        "expected_response": "The Head of the Department of Electrical Engineering is Assoc. Prof. Dr. Anis Salwa Mohd Khairuddin."
+    },
+    {
+        "course": "Electrical Engineering",
+        "user_input": "How many total credits are required to complete the Bachelor of Electrical Engineering?",
+        "expected_response": "Students must complete a total of 137 credit hours to graduate."
+    },
+    {
+        "course": "Electrical Engineering",
+        "user_input": "What courses I need to take in the first semester?",
+        "expected_response": "In Semester I, first-year students take Philosophy and Current Issues (or Malay Language Communication), English Communication I, Engineering Mathematics I, Digital System, Programming I, Circuit Analysis I, and Lab 1."
+    },
+    {
+        "course": "Electrical Engineering",
+        "user_input": "What is the course code for Engineering Mathematics 1?",
+        "expected_response": "The course code for Engineering Mathematics 1 is KIX1001."
+    },
+    {
+        "course": "Electrical Engineering",
+        "user_input": "What is the contact information for department of electrical engineering?",
+        "expected_response": "You can contact the Faculty of Engineering at at fk_tdhep@um.edu.my. Tel: +603 7967 7621 for general inquiries."
+    }
+]

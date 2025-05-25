@@ -20,4 +20,4 @@ ENV/
 vectordb/
 .gradio/
 *.log
-*.json
+parsed_documents.json
