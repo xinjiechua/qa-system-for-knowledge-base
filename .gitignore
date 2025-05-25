@@ -10,12 +10,14 @@ __pycache__/
 .DS_Store
 Thumbs.db
 
+
 # Environments
 .env
 .venv
 env/
 venv/
 ENV/
+venvnlp/
 
 vectordb/
 .gradio/
