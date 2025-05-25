@@ -20,7 +20,7 @@ pip install -r requirements.txt
 For macOS, install the following system dependencies:
 ```bash
 brew install tesseract
-brew install poppler`
+brew install poppler
 ```
 
 ### 3. Configure Environment Variables:
