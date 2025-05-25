@@ -5,7 +5,7 @@ load_dotenv()
 
 class Config:
     GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
-    LLM_MODEL_NAME = os.getenv("LLM_MODEL_NAME", "gemini-2.0-flash-lite")
+    LLM_MODEL_NAME = os.getenv("LLM_MODEL_NAME", "gemini-2.0-flash")
 
     QDRANT_HOST =  os.getenv("MILVUS_HOST", "localhost")
     QDRANT_PORT = int(os.getenv("MILVUS_PORT", "6333"))
@@ -20,11 +20,10 @@ class Config:
     QA_PROMPT_PATH = os.getenv("QA_PROMPT_PATH", "src/prompts/qa_prompt.txt")
     REFORMULATE_PROMPT_PATH = os.getenv("REFORMULATE_PROMPT_PATH", "src/prompts/reformulate_prompt.txt")
     
-    COURSES = [
-        "Computer Science",
-        "Electrical Engineering",
-        "Mechanical Engineering",
-        "Chemical Engineering",
-        "Biomedical Engineering",
-        "Civil Engineering",
-    ]
+    COURSE_TO_FILE_MAP = {
+        "Computer Science": "computer_science.pdf",
+        "Electrical Engineering": "electrical_engineering.pdf",
+        "Medicine": "medicine.pdf",
+        "Pharmacy": "pharmacy.pdf",
+        "Creative Arts": "creative_arts.pdf"
+    }

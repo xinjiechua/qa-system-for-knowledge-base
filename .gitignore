@@ -1,7 +1,25 @@
-.env
-vectordb/
+# Python bytecode and cache
 __pycache__/
+*.py[cod]
+
+# IDE-specific files
+.idea/
+.vscode/
+
+# OS-specific files (Windows and macOS)
+.DS_Store
+Thumbs.db
+
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
 venvnlp/
 
+vectordb/
+.gradio/
 *.log
 *.json

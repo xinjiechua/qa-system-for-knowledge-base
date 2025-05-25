@@ -1,10 +1,10 @@
-
+import logging
 from typing import Dict, List, Optional
 from google import genai
 from google.genai import types
 from src.config import Config
-import logging
 
+logger = logging.getLogger(__name__)
 config = Config()
 
 class GeminiLLM:
@@ -37,8 +37,7 @@ class GeminiLLM:
             contents=messages,
             config=config,
         )
-
-        print("Gemini response: ", response)
+        
         if response.candidates:
             if response.candidates[0].content and response.candidates[0].content.parts:
                 return response.candidates[0].content.parts[0].text
