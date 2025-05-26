@@ -123,5 +123,130 @@
         "course": "Electrical Engineering",
         "user_input": "What is the contact information for department of electrical engineering?",
         "expected_response": "You can contact the Faculty of Engineering at at fk_tdhep@um.edu.my. Tel: +603 7967 7621 for general inquiries."
+    },
+    {
+        "course": "Electrical Engineering",
+        "user_input": "Who is the deputy dean for Department of Electrical Engineering?",
+        "expected_response": "The Deputy Dean (Undergraduate) is Associate Professor is Assoc. Prof. Dr. Raja Ariffin Raja Ghazilla."
+    },
+    {
+        "course": "Electrical Engineering",
+        "user_input": "What is the course information for the course Human-Computer Interaction?",
+        "expected_response": "KIE4032: Interaksi Manusia-Komputer / Human-Computer Interaction, Course Code: KIE4032, Course Title: Human-Computer Interaction, Credit: 2, Medium of Instruction: Bahasa Inggeris"
+    },
+    {
+        "course": "Electrical Engineering",
+        "user_input": "What are the learning outcomes of the course Signals and Systems?",
+        "expected_response": "At the end of the course, students are able to: 1. Apply suitable transform technique for continuous-time and discrete-time signals. 2. Apply suitable signal representation technique in signal and system by taking into account various considerations. 3. Compare the input-output relationship of signal in written report or presentation."
+    },
+    {
+        "course": "Electrical Engineering",
+        "user_input": "How many credit hours are there for the course Circuit Analysis I?",
+        "expected_response": "The course Circuit Analysis I has 3 credit hours."
+    },
+    {
+        "course": "Electrical Engineering",
+        "user_input": "What are the prerequisites for the course Optimization Methods?",
+        "expected_response": "The prerequisites for the course Optimization Methods is KIE3005 (Numerical Analysis)."
+    },
+    {
+        "course": "Medicine",
+        "user_input": "What information do I have to include when applying for “Special Consideration”?",
+        "expected_response": "You must complete the form. You should have supporting documents from an appropriate professional authority, i.e., a registered medical practitioner or counsellor if you are unwell, OR submit a signed and witnessed Statutory Declaration or a police report form where you have experienced a misadventure. If these sections are not completed properly, your “Special Consideration” form will not be accepted."
+    },
+    {
+        "course": "Medicine",
+        "user_input": "Who is the Head of Department of Obstetrics and Gynaecology",
+        "expected_response": "The Head of Department of Obstetrics and Gynaecology is Professor Dr. Mukhri Hamdan."
+    },
+    {
+        "course": "Medicine",
+        "user_input": "How long is the MBBS programme?",
+        "expected_response": "The MBBS programme is a five-year programme."
+    },
+    {
+        "course": "Medicine",
+        "user_input": "What are the student societies that I can join?",
+        "expected_response": "The student societies you can join are: 1. Medical Society (MEDSOC) 2. BioMedical Science Society 3. Nursing Science Society (NurSoc)."
+    },
+    {
+        "course": "Medicine",
+        "user_input": "When are the final examinations scheduled for Term I?",
+        "expected_response": "The final examinations for Term I are scheduled for 27 November - 8 December 2023."
+    },
+    {
+        "course": "Medicine",
+        "user_input": "What is the course structure for the MBBS programme?",
+        "expected_response": "The structure of the UMMP is a matrix of Stages (Time) and Themes (Curriculum content). UMMP is divided into the following Five Courses (Stages). MIA 1001: Medical Sciences 1 (Stage 1), MIA 2001: Medical Sciences 2 (Stage 2), MIA 3001: Practice of Clinical Medicine 1 (Stage 3.1), MIA 4001: Practice of Clinical Medicine 2 (Stage 3.2), MIA 5001: Practice of Clinical Medicine 3 (Stage 3.3)."
+    },
+    {
+        "course": "Medicine",
+        "user_input": "Is accommodation provided for MBBS students?",
+        "expected_response": "All undergraduate students will be provided with on-campus accommodation managed by the Student Affairs Division (HEP). The Ibnu Sina (Sixth) Residential College equipped with three (3) blocks for male students and five (5) blocks for female students able to houses about 700 Faculty of Medicine’s students."
+    },
+    {
+        "course": "Medicine",
+        "user_input": "What does the Pre-Internship Term (PRINT) involve?",
+        "expected_response": "The Pre-Internship Term (PRINT) is the last eight-week component in the UMMP for students towards the concluding part of the MIA 5001: Practice of Clinical Medicine 3 (Stage 3.3) course. It is designed to help prepare you for some of the practicalities of internship. You will undergo an orientation a week prior to PRINT on essential aspects of your transition into the medical workforce. The weeks are spent in clinical attachments. You are responsible for your own learning, but you are required to complete some performance assessment tasks in which you are assessed by your supervisor. The supervisor will commit at an agreed time to help you in your preparation for the assessment."
+    },
+    {
+        "course": "Medicine",
+        "user_input": "Are there opportunities for encountering patients during the programme?",
+        "expected_response": "Yes, from the first week of Stage 1, students spend one day each week in UMMC or CSU where you learn communication skills, systematic history taking and physical examination techniques. Early clinical contact is a feature of the UMMP."
+    },
+    {
+        "course": "Medicine",
+        "user_input": "What is the Pt-Dr Theme?",
+        "expected_response": "The Pt-Dr Theme covers the clinical aspects of health and disease, both theoretically and from a practice perspective. It encompasses the diagnosis and assessment of patients through history taking, physical examination and the use of other investigations; communication skills; the management of clinical problems; basic procedural skills; and the identification and application of research-based evidence in health care practice (evidence-based medicine, abbreviated EBM)."
+    },
+    {
+        "course": "Creative Arts",
+        "user_input": "Who is the Music Programme Coordinator for Undergraduate?",
+        "expected_response": "The Music Programme Coordinator for Undergraduate is DR. WANG I-TA"
+    },
+    {
+        "course": "Creative Arts",
+        "user_input": "What are the graduation requirements for the Bachelor of Music programme?",
+        "expected_response": "To complete the Bachelor of Music degree, students must earn a total of 127 credits. This includes 14 credits for University Courses, 7 credits for Faculty Core Courses, 82 credits for Programme Core Courses, 8 credits for University Elective Courses (SHE), 3 credits for Faculty Elective Courses, and 13 credits for Programme Elective Courses."
+    },
+    {
+        "course": "Creative Arts",
+        "user_input": "What is the contact information for the faculty's student affairs?",
+        "expected_response": "For further enquiries on Student Welfare Matters within faculty: Contact Person: Dr. Premalatha Thiagarajan Deputy Dean (Undergraduate & Student Affairs) Email: premalatha@um.edu.my Puan Rohaizan Ramli Senior Assistant Registrar Email: rohaizan@um.edu.my Encik Mohd Hairil Anuar Bari Cultural Officer Email: asbari@um.edu.my"
+    },
+    {
+        "course": "Creative Arts",
+        "user_input": "Am I required to take an English course if I got Band 5 in MUET?",
+        "expected_response": "Students with band 5 and 6 of MUET are given the option to take either a English Communication Course or a foreign language course."
+    },
+    {
+        "course": "Creative Arts",
+        "user_input": "What is the course code for the course Dance Technique I?",
+        "expected_response": "The course code for Dance Technique I is RIC1008."
+    },
+    {
+        "course": "Creative Arts",
+        "user_input": "What is the course description for the course Introduction to Music Education?",
+        "expected_response": "This course aims to introduce students to well-known music education approaches such as Orff, Kodaly, Dalcroze, Suzuki and others as well as expose students to active involvement in teaching activities. Students are required to plan, implement and report on programs or projects that they have selected. All the different levels are planned together in groups and implemented at selected areas. Students are required to produce a full report based on the school project carried out and present the report."
+    },
+    {
+        "course": "Creative Arts",
+        "user_input": "What courses should I take in Year 1 Semester 1 for the Drama programme?",
+        "expected_response": "In Year 1 Semester 1, you will take: GIG1013 (Appreciation of Ethics and Civilizations), GLTXXXX (English for Communication 1), RIB1002 (Drama Appreciation), RIB1003 (Vocal Technique), RIB1007 (Malaysia Traditional Theatre), RIB1009 (Theatre Technology) and RIB1010 (Movement Technique in Theatre)."
+    },
+    {
+        "course": "Creative Arts",
+        "user_input": "How long is the Bachelor of Performing Arts programme?",
+        "expected_response": "The Bachelor of Performing Arts programme is a three-year programme, consisting of six regular semesters (each 14 weeks long) and one special semester (7 weeks)."
+    },
+    {
+        "course": "Creative Arts",
+        "user_input": "Is Industrial Training required for the Bachelor of Drama programme?",
+        "expected_response": "Yes, Industrial Training (RIB3022) is required for the Bachelor of Drama programme."
+    },
+    {
+        "course": "Creative Arts",
+        "user_input": "Who is the Drama Programme Coordinator?",
+        "expected_response": "The Drama Programme Coordinator is RAJA FARAH RAJA HADAYADANIN."
     }
 ]
