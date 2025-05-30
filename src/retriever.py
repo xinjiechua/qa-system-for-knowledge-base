@@ -79,3 +79,35 @@ class RAG():
         response_dict = json.loads(response)
         logger.info("LLM response: %s", response)
         return response_dict.get("message", "")
+    
+    def get_response_with_context(self, user_message, history, selected_course):
+        """
+        Same as get_response, but also returns a list of context strings used in generation.
+        """
+        reformulated_query = self.reformulate_query(history=history, query=user_message)
+        retrieved_chunks = vectordb.query(query=reformulated_query, selected_course=selected_course)
+        logger.info("Retrieved chunks: %s", retrieved_chunks)
+
+        if hasattr(retrieved_chunks, 'points') and retrieved_chunks.points:
+            chunks = retrieved_chunks.points
+            filtered_chunks = self.rerank_chunks(chunks, reformulated_query)
+            logger.info("Filtered chunks: %s", filtered_chunks)
+            context_str_list = [content.node.text for content in filtered_chunks]
+            context_str = "\n\n".join([f"Context {i + 1}:\n{c}" for i, c in enumerate(context_str_list)])
+        else:
+            context_str_list = []
+            context_str = "No relevant context found."
+
+        prompt = self.qa_prompt.format(context_str=context_str)
+        messages = [{"role": "model", "parts": [{"text": prompt}]}]
+        for user_turn, bot_turn in history:
+            messages.append({"role": "user", "parts": [{"text": user_turn}]})
+            messages.append({"role": "model", "parts": [{"text": bot_turn}]})
+        messages.append({"role": "user", "parts": [{"text": user_message}]})
+
+        logger.info("Messages: %s", messages)
+        response = llm.complete(messages=messages)
+        response_dict = json.loads(response)
+        logger.info("LLM response: %s", response)
+
+        return response_dict.get("message", ""), context_str_list
