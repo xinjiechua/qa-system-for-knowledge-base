@@ -27,8 +27,8 @@ class VectorDB():
             )
         logger.info(f"Collection '{self.collection_name}' is ready.")
 
-    def insert(self):
-        documents = parse_pdf(file_path=Config.DATA_PATH)
+    async def insert(self):
+        documents = await parse_pdf(file_path=Config.DATA_PATH)
         
         points = [
             PointStruct(
