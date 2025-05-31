@@ -1,18 +1,18 @@
 [
     {
         "course": "Computer Science",
-        "user_input": "How many programmes are offered under the Bachelor of Computer Science?",
+        "user_input": "How many and what are the programmes are offered under the Bachelor of Computer Science?",
         "expected_response": "There are six programmes offered: Computer System and Network, Artificial Intelligence, Information Systems, Software Engineering, Multimedia Computing, and Data Science."
     },
     {
         "course": "Computer Science",
-        "user_input": "When should Computer Science students start their industrial training, and how long is the duration?",
-        "expected_response": "You should start your industrial training in Semester 1 of Year 3. The training should at least 24 weeks. If less than 24 weeks, the student does not fulfil the requirement of the Industrial Training programme and will fail his or her Industrial Training."
+        "user_input": "In which year should I take the industrial training programme and how long is it?",
+        "expected_response": "You should undergo your industrial training in Semester 1 of Year 3 for a duration of 24 weeks."
     },
     {
         "course": "Computer Science",
-        "user_input": "What grading system is used in FCSIT?",
-        "expected_response": "FCSIT uses UM's grading system. Grades include: A = 4.00, A- = 3.70, B+ = 3.30, B = 3.00, B- = 2.70, C+ = 2.30, C = 2.00, C- = 1.70, D+ = 1.30, D = 1.00 (conditional pass), and F = 0.00 (fail). Refer to page 97 for details."
+        "user_input": "What are the grading system?",
+        "expected_response": "FCSIT uses official University grades including the marks and their meaning are as follows:\n\n| Marks          | Grade | Grade Point | Interpretation |\n| -------------- | ----- | ----------- | -------------- |\n| 90.00 - 100.00 | A+    | 4.00        | Distinction    |\n| 80.00 - 89.99  | A     | 4.00        | Distinction    |\n| 75.00 - 79.99  | A-    | 3.70        | Distinction    |\n| 70.00 - 74.99  | B+    | 3.30        | Good           |\n| 65.00 - 69.99  | B     | 3.00        | Good           |\n| 60.00 - 64.99  | B-    | 2.70        | Good           |\n| 55.00 - 59.99  | C+    | 2.30        | Pass           |\n| 50.00 - 54.99  | C     | 2.00        | Pass           |\n| 45.00 - 49.99  | C     | 1.70        | Fail           |\n| 40.00 - 44.99  | D+    | 1.30        | Fail           |\n| 35.00 - 39.99  | D     | 1.00        | Fail           |\n| 00.00 - 34.99  | F     | 0.00        | Fail           |"
     },
     {
         "course": "Computer Science",
@@ -31,22 +31,22 @@
     },
     {
         "course": "Computer Science",
-        "user_input": "Are there any programming courses in the first year as an Artificial Intelligence student?",
-        "expected_response": "Yes, you will learn the basics of programming in your first year through courses like Fundamentals of Programming and Data Structures."
+        "user_input": "Will I learn programming in Semester 1?",
+        "expected_response": "Yes, you will learn the basics of programming in Semester 1 through WIX1002 Fundamentals of Programming course."
     },
     {
         "course": "Computer Science",
-        "user_input": "How long is the Computer Science programme?",
+        "user_input": "How many years is the Computer Science programme?",
         "expected_response": "The Computer Centre offered a four (4) years Bachelor of Computer Science programme."
     },
     {
         "course": "Computer Science",
         "user_input": "How many academic projects are required in the final year?",
-        "expected_response": "You will have Academic Project I and Academic Project II."
+        "expected_response": "You are required to complete Academic Project I and Academic Project II in the final year."
     },
     {
         "course": "Computer Science",
-        "user_input": "What courses should I take in Year 1 Semester 1 for the Computer Science (Artificial Intelligence) programme?",
+        "user_input": "What courses should I take in Year 1 Semester 1?",
         "expected_response": "In Year 1 Semester 1, you will take: GIG1003 (Basic Entrepreneurship Culture), GLTXXXX (English for Communication 1), WIX1001 (Computing Mathematics I), WIX1002 (Fundamentals of Programming), WIX1003 (Computer Systems and Organization), and WIA1007 (Introduction to Data Science)"
     },
     {
@@ -111,8 +111,8 @@
     },
     {
         "course": "Electrical Engineering",
-        "user_input": "What courses I need to take in the first semester?",
-        "expected_response": "In Semester I, first-year students take Philosophy and Current Issues (or Malay Language Communication), English Communication I, Engineering Mathematics I, Digital System, Programming I, Circuit Analysis I, and Lab 1."
+        "user_input": "What are the courses with the names that I need to take in Year 1 S1?",
+        "expected_response": "In Year 1 S1, you need to take the following courses: GIG1012 / GLT1049: Philosophy And Current Issues, GLTXXXX English Communication Programme I, KIX1001 Engineering Mathematics I, KIE1003 Digital System, KIE1004 Programming I, and KIE1005 Circuit Analysis I."
     },
     {
         "course": "Electrical Engineering",
@@ -122,27 +122,27 @@
     {
         "course": "Electrical Engineering",
         "user_input": "What is the contact information for department of electrical engineering?",
-        "expected_response": "You can contact the Faculty of Engineering at at fk_tdhep@um.edu.my. Tel: +603 7967 7621 for general inquiries."
+        "expected_response": "You can contact the Faculty of Engineering at Tel: (603) 7967 5205 or visit https://engine.um.edu.my and https://lee.um.edu.my for general inquiries."
     },
     {
         "course": "Electrical Engineering",
-        "user_input": "Who is the deputy dean for Department of Electrical Engineering?",
+        "user_input": "Who is the deputy dean undergratudate for Department of Electrical Engineering?",
         "expected_response": "The Deputy Dean (Undergraduate) is Associate Professor is Assoc. Prof. Dr. Raja Ariffin Raja Ghazilla."
     },
     {
         "course": "Electrical Engineering",
-        "user_input": "What is the course information for the course Human-Computer Interaction?",
-        "expected_response": "KIE4032: Interaksi Manusia-Komputer / Human-Computer Interaction, Course Code: KIE4032, Course Title: Human-Computer Interaction, Credit: 2, Medium of Instruction: Bahasa Inggeris"
+        "user_input": "What are the course learning outcomes for the Digital System course?",
+        "expected_response": "At the end of the course, students are able to: \nSolve basic arithmetic operations with number representations and code conversions. \nDemonstrate effectively the design of logic circuits and modules with various methods learnt. \nAnalyze the operation of sequential logic circuits in digital system."
     },
     {
         "course": "Electrical Engineering",
-        "user_input": "What are the learning outcomes of the course Signals and Systems?",
-        "expected_response": "At the end of the course, students are able to: 1. Apply suitable transform technique for continuous-time and discrete-time signals. 2. Apply suitable signal representation technique in signal and system by taking into account various considerations. 3. Compare the input-output relationship of signal in written report or presentation."
+        "user_input": "When is the Semester I Mid-Semester Break?",
+        "expected_response": "The Semester I Mid-Semester Break is from 25.11.2024 - 01.12.2024."
     },
     {
         "course": "Electrical Engineering",
-        "user_input": "How many credit hours are there for the course Circuit Analysis I?",
-        "expected_response": "The course Circuit Analysis I has 3 credit hours."
+        "user_input": "How many credit hours are there for the course KIE1005 Circuit Analysis I?",
+        "expected_response": "The course KIE1005 Circuit Analysis I has 3 credit hours."
     },
     {
         "course": "Electrical Engineering",
@@ -201,13 +201,13 @@
     },
     {
         "course": "Creative Arts",
-        "user_input": "Who is the Music Programme Coordinator for Undergraduate?",
-        "expected_response": "The Music Programme Coordinator for Undergraduate is DR. WANG I-TA"
+        "user_input": "What are the courses related to piano offered?",
+        "expected_response": "The courses related to piano offered are RIA2011 Piano Accompaniment, RIA1013 Keyboard Skills, RIA2016 Piano Pedagogy, and RIA2032 Piano Repertoire."
     },
     {
         "course": "Creative Arts",
-        "user_input": "What are the graduation requirements for the Bachelor of Music programme?",
-        "expected_response": "To complete the Bachelor of Music degree, students must earn a total of 127 credits. This includes 14 credits for University Courses, 7 credits for Faculty Core Courses, 82 credits for Programme Core Courses, 8 credits for University Elective Courses (SHE), 3 credits for Faculty Elective Courses, and 13 credits for Programme Elective Courses."
+        "user_input": "What are the programme structure for the Bachelor of Music programme?",
+        "expected_response": "The programme strucutre includes 14 credits for University Courses, 7 credits for Faculty Core Courses, 82 credits for Programme Core Courses, 8 credits for University Elective Courses (SHE), 3 credits for Faculty Elective Courses, and 13 credits for Programme Elective Courses. The total credits for graduation is 127 credits."
     },
     {
         "course": "Creative Arts",
@@ -242,7 +242,7 @@
     {
         "course": "Creative Arts",
         "user_input": "Is Industrial Training required for the Bachelor of Drama programme?",
-        "expected_response": "Yes, Industrial Training (RIB3022) is required for the Bachelor of Drama programme."
+        "expected_response": "Yes, Industrial Training (RIB3022) is required for the Bachelor of Drama programme. Students are required to select one of the activities such as: Attachment to a professional group, Attachment as a professional actor/designer/stage manager, Assistant Producer, Arts Administration, Production Management, Stage Management, Drama education, Training in the Box-Office, Training in technical handling, Experience in control-room (recording, playback, audio-console and lighting)."
     },
     {
         "course": "Creative Arts",
