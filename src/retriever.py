@@ -48,7 +48,8 @@ class RAG():
             for chunk in chunks
         ]
         reranked_chunks = self.reranker.postprocess_nodes(nodes=nodes, query_str=query)
-        filtered_chunks = [node for node in reranked_chunks if node.score >= 0.3]
+        logger.info("Reranked chunks: %s", reranked_chunks)
+        filtered_chunks = [node for node in reranked_chunks if node.score >= 0.1]
         return filtered_chunks
 
     def get_response(self, user_message, history, selected_course) -> str:
