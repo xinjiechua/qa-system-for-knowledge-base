@@ -22,4 +22,5 @@ venvnlp/
 vectordb/
 .gradio/
 *.log
+archive/
 parsed_documents.json
