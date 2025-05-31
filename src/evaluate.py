@@ -124,9 +124,9 @@ class QAEvaluator:
 def main():
     config = Config()
     evaluator = QAEvaluator(config)
-    test_data = evaluator.load_test_data('evaluation_benchmark.json')
+    test_data = evaluator.load_test_data('evaluation/evaluation_benchmark.json')
     results = evaluator.evaluate_all(test_data)
-    evaluator.save_evaluation_results(results, 'evaluation_results.json')
+    evaluator.save_evaluation_results(results, 'evaluation/evaluation_results.json')
 
     print("\nOverall Evaluation Summary:")
     for metric_name, score in results['overall_metrics'].items():

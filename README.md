@@ -48,3 +48,8 @@ python app.py
 ```
 Once the application is running, you can access it via your browser at:
 http://127.0.0.1:7860
+
+### 6. Run evaluation
+```bash
+python src/evaluation.py
+```
