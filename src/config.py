@@ -13,8 +13,8 @@ class Config:
     COHERE_API_KEY= os.getenv("COHERE_API_KEY")
     COLLECTION_NAME = os.getenv("COLLECTION_NAME", "Repository")
     
-    RETRIEVE_TOP_K = int(os.getenv("RETRIEVE_TOP_K", 5))
-    RERANK_TOP_P = int(os.getenv("RERANK_TOP_P", 3))
+    RETRIEVE_TOP_K = int(os.getenv("RETRIEVE_TOP_K", 8))
+    RERANK_TOP_P = int(os.getenv("RERANK_TOP_P", 5))
     
     DATA_PATH = os.getenv("DATA_PATH", "./data")
     QA_PROMPT_PATH = os.getenv("QA_PROMPT_PATH", "src/prompts/qa_prompt.txt")
