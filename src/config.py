@@ -17,6 +17,7 @@ class Config:
     RERANK_TOP_P = int(os.getenv("RERANK_TOP_P", 5))
     
     DATA_PATH = os.getenv("DATA_PATH", "./data")
+    GUARDRAIL_PATH = os.getenv("GUARDRAIL_PATH", "src/prompts/guardrail_prompt.txt")
     QA_PROMPT_PATH = os.getenv("QA_PROMPT_PATH", "src/prompts/qa_prompt.txt")
     REFORMULATE_PROMPT_PATH = os.getenv("REFORMULATE_PROMPT_PATH", "src/prompts/reformulate_prompt.txt")
     

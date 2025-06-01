@@ -17,7 +17,24 @@ class RAG():
             self.reformulate_prompt = file.read()
         with open(Config.QA_PROMPT_PATH, "r") as file:
             self.qa_prompt = file.read()
-        
+        with open(Config.GUARDRAIL_PATH, "r") as file:
+            self.guardrail_prompt = file.read()
+            
+    # guardrail check to ensure user input is safe
+    def is_safe_message(self, user_input: str) -> bool:
+        # return True  # Placeholder for actual guardrail check logic
+        try:
+            prompt = self.guardrail_prompt.format(user_input=user_input)
+            response = llm.complete(messages=prompt)
+            moderation_result = json.loads(response)
+            logger.info("Moderation response: %s and status: %s", moderation_result, moderation_result.get("status") == "SAFE")
+            return moderation_result.get("status") == "SAFE"
+    
+        except Exception as e:
+            logger.error("Moderation LLM call failed: %s", e)
+            # Fail-safe: assume it's safe if moderation check fails
+            return True
+
     def reformulate_query(self, history, query) -> str:
         """
         Reformulate query based on past message history 
@@ -56,6 +73,9 @@ class RAG():
         """
         Retreive relevant chunks from the document and generate a response using the LLM.
         """
+        # apply guardrail 
+        if not self.is_safe_message(user_message):
+            return "⚠️ Your message was flagged for violating content guidelines."
         reformulated_query = self.reformulate_query(history=history,query=user_message)
         retrieved_chunks = vectordb.query(query=reformulated_query, selected_course=selected_course)
         logger.info("Retrieved chunks: %s", retrieved_chunks)
@@ -85,6 +105,9 @@ class RAG():
         """
         Same as get_response, but also returns a list of context strings used in generation.
         """
+        # apply guardrail 
+        if not self.is_safe_message(user_message):
+            return "⚠️ Your message was flagged for violating content guidelines.", []
         reformulated_query = self.reformulate_query(history=history, query=user_message)
         retrieved_chunks = vectordb.query(query=reformulated_query, selected_course=selected_course)
         logger.info("Retrieved chunks: %s", retrieved_chunks)
